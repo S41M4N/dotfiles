@@ -8,14 +8,13 @@ if ! command -v zsh &> /dev/null && [ ! -x "/usr/bin/zsh" ] && [ ! -x "/bin/zsh"
     exit 1
 fi
 
-
 DOTFILES_DIR="$HOME/.dotfiles"
 ZSHRC_FILE="$HOME/.zshrc"
 SOURCE_CMD="source \"$DOTFILES_DIR/init.sh\""
 
 if [ ! -d "$DOTFILES_DIR" ]; then
     echo "Cloning dotfiles repository to ~/.dotfiles..."
-    git clone -b setup/zsh-configuration https://github.com/S41M4N/dotfiles.git "$DOTFILES_DIR"
+    git clone https://github.com/S41M4N/dotfiles.git "$DOTFILES_DIR"
 fi
 
 # Install Oh My Zsh

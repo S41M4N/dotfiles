@@ -60,3 +60,20 @@ chmod +x install.sh
 5. Sets `zsh` as your system default shell using `chsh`.
 
 Close and reopen your terminal after setup finishes.
+
+## Updating
+
+To pull the latest changes, updates to plugins, and theme files, run:
+
+```bash
+~/.dotfiles/update.sh
+```
+
+Or use the built-in alias:
+
+```bash
+dotupdate
+```
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
