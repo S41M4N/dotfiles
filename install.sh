@@ -64,4 +64,9 @@ fi
 echo ""
 echo "Setup completed successfully."
 
-exec zsh
+# Only start Zsh if we are not in an automated environment
+if [ "$DOTFILES_SKIP_ZSH" != "true" ]; then
+    exec zsh
+else
+    echo "Restart your terminal to apply the changes."
+fi
