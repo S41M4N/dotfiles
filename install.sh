@@ -3,7 +3,7 @@
 echo "Starting setup..."
 
 # Check if Zsh is installed
-if ! command -v zsh &> /dev/null; then
+if ! command -v zsh &> /dev/null && [ ! -x "/usr/bin/zsh" ] && [ ! -x "/bin/zsh" ]; then
     echo "Error: zsh is not installed. Please install zsh first and run this script again."
     exit 1
 fi
