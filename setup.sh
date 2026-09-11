@@ -56,3 +56,7 @@ elif ! grep -q "$DOTFILES_DIR/init.sh" "$ZSHRC_FILE"; then
 else
     echo "Configuration already linked in ~/.zshrc. Skipping..."
 fi
+
+echo ""
+echo "Setup completed successfully."
+echo "Restart your terminal to apply the changes."

@@ -38,7 +38,7 @@ Run these commands in your terminal to set up on a new machine:
 
 ```bash
 git clone https://github.com/S41M4N/dotfiles.git ~/.dotfiles
-cd ~/.config
+cd ~/.dotfiles
 chmod +x setup.sh
 ./setup.sh
 ```
