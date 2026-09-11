@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.zsh text eol=lf
+*rc text eol=lf
+*profile text eol=lf
+*.zsh linguist-language=Shell
+*.md text eol=lf
