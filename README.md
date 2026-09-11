@@ -34,6 +34,15 @@ Powerlevel10k requires a Nerd Font to render icons like arrows, git status, and 
 
 ## Installation
 
+### Automatic
+
+Run this command directly in your terminal to automatically clone the repository to `~/.dotfiles` and configure dependencies:
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/S41M4N/dotfiles/main/install.sh)"
+```
+
+### Manual
 Run these commands in your terminal to set up on a new machine:
 
 ```bash
@@ -43,10 +52,11 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-### What `setup.sh` does:
-1. Checks if `zsh` is installed.
-2. Clones Oh My Zsh, Powerlevel10k, and Zinit into their designated directories.
-3. Sets `zsh` as your system default shell using `chsh`.
-4. Prepends `source ~/.dotfiles/init.sh` to the top of your existing `~/.zshrc` without deleting or replacing your personal configuration.
+### What `install.sh` does:
+1. Clones this repository to `~/.dotfiles` (if not already present).
+2. Checks if `zsh` is installed on your system.
+3. Clones Oh My Zsh, Powerlevel10k, and Zinit into their designated directories.
+4. Prepends `source ~/.dotfiles/init.sh` to the top of your existing `~/.zshrc` without deleting existing configurations.
+5. Sets `zsh` as your system default shell using `chsh`.
 
 Close and reopen your terminal after setup finishes.
