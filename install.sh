@@ -15,7 +15,7 @@ SOURCE_CMD="source \"$DOTFILES_DIR/init.sh\""
 
 if [ ! -d "$DOTFILES_DIR" ]; then
     echo "Cloning dotfiles repository to ~/.dotfiles..."
-    git clone https://github.com/S41M4N/dotfiles.git "$DOTFILES_DIR"
+    git clone -b setup/zsh-configuration https://github.com/S41M4N/dotfiles.git "$DOTFILES_DIR"
 fi
 
 # Install Oh My Zsh
