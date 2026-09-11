@@ -48,8 +48,8 @@ Run these commands in your terminal to set up on a new machine:
 ```bash
 git clone https://github.com/S41M4N/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-chmod +x setup.sh
-./setup.sh
+chmod +x install.sh
+./install.sh
 ```
 
 ### What `install.sh` does:

@@ -64,4 +64,5 @@ fi
 
 echo ""
 echo "Setup completed successfully."
-echo "Restart your terminal to apply the changes."
+
+exec zsh
